@@ -29,12 +29,13 @@ def main():
             else:
                 print(f"O país {parametros[0]} não se encontra na lista.")
         elif(op == 'EPE'):
-            primeiro_elemento = ll.start_node
-            ll.delete_at_start()
-            print(f"O país {primeiro_elemento} foi eliminado da lista.")
+            ll.reverse_linkedlist()
+            primeiro = ll.get_last_node()
+            print(f"O país {primeiro} foi eliminado da lista.")
         elif(op == 'EUE'):
+            ultimo = ll.get_last_node()
             ll.delete_at_end()
-            print(f"O país {parametros[0]} foi eliminado da lista.")
+            print(f"O país {ultimo} foi eliminado da lista.")
         elif(op == 'EP'):
             if(ll.search_item(parametros[0])):
                 ll.delete_element_by_value(parametros[0])
