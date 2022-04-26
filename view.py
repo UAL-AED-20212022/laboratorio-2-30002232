@@ -6,7 +6,7 @@ def main():
         comandos = input().split()
         op = comandos[0].upper()
         parametros = comandos[1:]
-        if(op == 'RIP'):
+        if(op == 'RPI'):
             ll.insert_at_start(parametros[0])
             ll.traverse_list()
         elif(op == 'RPF'):
@@ -18,7 +18,7 @@ def main():
         elif(op == 'RPAE'):
             ll.insert_before_item(parametros[1], parametros[0])
             ll.traverse_list()
-        elif(op == 'RPI'):
+        elif(op == 'RPII'):
             ll.insert_at_index(int(parametros[1]), parametros[0])
             ll.traverse_list()
         elif(op == 'VNE'):
