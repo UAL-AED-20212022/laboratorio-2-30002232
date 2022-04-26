@@ -31,6 +31,7 @@ def main():
         elif(op == 'EPE'):
             ll.reverse_linkedlist()
             primeiro = ll.get_last_node()
+            ll.delete_element_by_value(primeiro)
             ll.reverse_linkedlist()
             print(f"O país {primeiro} foi eliminado da lista.")
         elif(op == 'EUE'):
